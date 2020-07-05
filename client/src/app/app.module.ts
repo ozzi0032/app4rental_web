@@ -13,7 +13,7 @@ import { PagesModule } from './pages/pages.module';
 //komponente
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './pages/header/header.component';
-import { FooterComponent } from './pages/footer/footer.component';
+//import { FooterComponent } from './pages/footer/footer.component';
 import { UserService } from './services/user.service'
 import { ErrorComponent } from './pages/error/error.component'
 
@@ -23,7 +23,7 @@ import { ErrorService } from './services/error.service'
   declarations: [
     AppComponent,
     HeaderComponent,
-    FooterComponent,
+    //FooterComponent,
     ErrorComponent
   ],
   imports: [

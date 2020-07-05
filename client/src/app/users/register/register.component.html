@@ -2,13 +2,6 @@
 <div class="row">
     <div id="idemo" class="col-md-6 mb-3" style="text-align:center; max-width:350px;">
         <img class="mb-4" src="../assets/images/house.png" alt="" width="128" height="128">
-        <p>In consideration of Your access to and use of the Service, You agree to provide true, accurate,
-           current and complete information about yourself 
-          and notify us of any changes to previously submitted registration data.
-          If You provide any information that is false, incomplete or otherwise inaccurate, or we have
-          a reasonable basis to suspect that such inaccurate information has been provided, we have the 
-          right to deny, suspend, or terminate Your account and refuse any and all current or future use 
-          of the Service (or any portion thereof).</p>
     </div>
         <form class="needs-validation col-md-6 mb-3" [formGroup]="form" (ngSubmit)="onSubmit()">
             <h4 class="mb-3">Registration form</h4>
@@ -96,7 +89,7 @@
 
           <div class="mb-3">
             <label for="tel">Phone number</label>
-            <input type="tel" class="form-control" id="tel" placeholder="+381655555555" formControlName="phone">
+            <input type="tel" class="form-control" id="tel" placeholder="+923XXXXXXXXX" formControlName="phone">
             <div *ngIf="form.controls['phone'].errors && !form.controls['phone'].pristine" class="error-msg">
               <div [hidden]="!form.controls['phone'].errors.required">
                   Valid phone number is required.

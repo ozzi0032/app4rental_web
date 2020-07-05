@@ -93,23 +93,6 @@ getImateUrl(name:string)
 {
  return this.imageURL+name;
 }
-/*
-getImageFile(url:string)
-{
-  const options = { responseType: ResponseContentType.Blob};
-  return this.http.get(url,options).pipe(
-    map((response: Response) => {
-        return response.blob();
-    }) ,catchError((error: Response) => {
-      this.errorService.handleError(error);
-      return throwError(error);
-  })
-);
-}
-
-new File([data], this.prop.image1,{type:data.type, lastModified: Date.now()});
-*/
-
 editProperty(id: string) {
   const headers = new Headers({'Authorization': localStorage.getItem('token') });
     return this.http.get(this.rootUrl +'edit/'+ id,{headers:headers}).pipe(

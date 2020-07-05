@@ -1,11 +1,9 @@
-///moduli
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { StarRatingModule } from 'angular-star-rating';
 import { PropertiesRoutingModule } from './properties-routing.module';
-import { ReactiveFormsModule,FormsModule } from '@angular/forms';
+import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 
-//komponente
 import { ViewPropertyComponent } from './view-property/view-property.component';
 import { AddPropertyComponent } from './add-property/add-property.component';
 import { PropertyFormComponent } from './property-form/property-form.component';

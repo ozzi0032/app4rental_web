@@ -1,13 +1,10 @@
 import { Component, OnInit } from '@angular/core';
-//ruter
 import { Router } from '@angular/router';
-//servisi
 import { PropertyService } from '../../services/property.service';
 import { ToastrService } from 'ngx-toastr';
 
 @Component({
   selector: 'app-add-property',
-  //dodavanje deteta s eventom prijema podataka
   template: `
   <app-property-form (event)="sendData($event)"></app-property-form>
   `,

@@ -24,16 +24,16 @@
     <div class="form-row justify-content-center toCent" style="max-width:500px">
         <div class="form-group col-md-6">
           <label for="inputDeposit">Deposit</label>
-          <input type="number" class="form-control" id="inputDeposit" placeholder="Enter deposit in euros" formControlName="deposit">
+          <input type="number" class="form-control" id="inputDeposit" placeholder="Enter deposit" formControlName="deposit">
           <div *ngIf="form.controls['deposit'].errors && !form.controls['deposit'].pristine" class="error-msg">
                 <div [hidden]="!form.controls['deposit'].errors.required">
                     Valid deposit is required.
                 </div>
                 <div [hidden]="!form.controls['deposit'].errors.min">
-                    Deposit is too small (min 50).
+                    Deposit is too small (min 5000).
                 </div>
                 <div [hidden]="!form.controls['deposit'].errors.max">
-                        Deposit is too big (max 1000).
+                        Deposit is too big (max 100000).
                     </div>
             </div>
        

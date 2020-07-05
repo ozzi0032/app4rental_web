@@ -1,13 +1,13 @@
 {
-  "name": "sajttest",
+  "name": "app4rental",
   "version": "1.0.0",
-  "description": "Sajt za test",
+  "description": "property listing app",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node app"
   },
-  "author": "Nemanja Tesic",
+  "author": "team1",
   "license": "ISC",
   "dependencies": {
     "bcryptjs": "^2.4.3",
